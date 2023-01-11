@@ -58,6 +58,12 @@ public class TestNewPostCreating {
         WebElement postButton = driver.findElement(By.xpath("//*[text() = \"Опубликовать\"]"));
         postButton.click();
 
-        driver.quit();
+        try {
+            Thread.sleep(10000);
+        }   catch (InterruptedException e) {
+            e.printStackTrace();
+        }   finally {
+            driver.quit();
+        }
     }
 }
