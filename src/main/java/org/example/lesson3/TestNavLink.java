@@ -1,6 +1,5 @@
 package org.example.lesson3;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +14,7 @@ public class TestNavLink {
 
     public static void main(String[] args) {
 
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         options.addArguments("start-maximized");
@@ -60,7 +59,7 @@ public class TestNavLink {
         WebElement twelfthNavElement = driver.findElement(By.xpath("//ul[@class = \"categories__list js--limited-list\"]/li[11]"));
         twelfthNavElement.click();
 
-        WebElement thirteenthNavElement = driver.findElement(By.xpath("//ul[@class = \"categories__list js--limited-list\"]/li[11]"));
+        WebElement thirteenthNavElement = driver.findElement(By.xpath("//ul[@class = \"categories__list js--limited-list\"]/li[12]"));
         thirteenthNavElement.click();
 
         driver.quit();

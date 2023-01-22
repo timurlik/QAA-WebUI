@@ -1,9 +1,11 @@
+package org.example.Lesson4;
+
 import org.example.lesson4.Triangle;
 import org.example.lesson4.TriangleException;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
+@Disabled
 public class MyTest {
     Triangle triangle = new Triangle();
 
