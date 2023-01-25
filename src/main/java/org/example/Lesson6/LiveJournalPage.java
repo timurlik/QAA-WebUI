@@ -12,8 +12,8 @@ public class LiveJournalPage {
     Actions builder;
     private WebDriver driver;
     private static final String URL = "https://www.livejournal.com/";
-    private static final String SIGNINBUTTON= "//a[@href=\"https://www.livejournal.com/login.bml?returnto=https://www.livejournal.com/&ret=1\"]";
-    private static final String LOGINBUTTON = "//button[@class = \"b-loginform-btn b-loginform-btn--login b-loginform-btn--auth b-loginform-btn--center\"]";
+    private static final String SIGNINBUTTON= "//a[text()='Log in']";
+    private static final String LOGINBUTTON = "//div[@class = \"b-loginform__body\"]//form[1]/button";
     private static final String LOGININPUTFIELD = "//*[@id=\"user\"]";
     private static final String PASSWORDINPUTFIELD = "//input[@id = 'lj_loginwidget_password']";
     private static final String NAVLIST = "//ul[@class = \"categories__list js--limited-list\"]/li[position()<13]";
