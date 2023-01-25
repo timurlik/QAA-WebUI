@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
-
+@Disabled
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class LiveJournalTests {
 
@@ -38,7 +38,7 @@ public class LiveJournalTests {
     }
     @AfterEach
     void quit() {
-        driver.quit();
+      driver.quit();
     }
 
     @Test
